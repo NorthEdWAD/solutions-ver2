@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplified Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 20px; background-color: #f4f4f9; }
+        #gallery-container { margin: 20px auto; max-width: 600px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        #gallery-img { max-width: 100%; height: auto; border-radius: 4px; border: 1px solid #ccc; }
+        #gallery-caption { margin-top: 10px; font-size: 18px; }
+        .controls { margin-top: 20px; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; background-color: #007BFF; color: white; border: none; border-radius: 4px; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+    <div id="gallery-container">
+        <img id="gallery-img" src="coffee-shop.jpg" alt="Gallery Image">
+        <p id="gallery-caption">Coffee Shop</p>
+        
+        <div class="controls">
+            <button id="prev-btn">Previous</button>
+            <button id="pause-btn">Pause</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <script>
+        const images = ["coffee-shop.jpg", "jean-jacket.jpg", "fashion-girl.jpg"];
+        const captions = ["Coffee Shop", "Jean Jacket", "Fashionable"];
+        let currentIndex = 0;
+        let slideInterval;
+        let isPlaying = false;
+
+        function updateGallery(index) {
+            currentIndex = index;
+            document.getElementById("gallery-img").src = images[index];
+            document.getElementById("gallery-caption").textContent = captions[index];
+        }
+
+        function runSlideshow() {
+            // We use the loop to determine what the 'next' index should be
+            for (let i = 0; i < images.length; i++) {
+                if (i === currentIndex) {
+                    let nextIdx = (i + 1) % images.length;
+                    updateGallery(nextIdx);
+                    break; // Exit once we've moved the gallery forward once
+                }
+            }
+        }
+
+        function startTimer() {
+            isPlaying = true;
+            document.getElementById("pause-btn").textContent = "Pause";
+            // The timer calls the loop-based function every 2 seconds
+            slideInterval = setInterval(runSlideshow, 2000);
+        }
+
+        function stopTimer() {
+            isPlaying = false;
+            document.getElementById("pause-btn").textContent = "Play";
+            clearInterval(slideInterval);
+        }
+
+        function toggleSlideshow() {
+            if (isPlaying) { stopTimer(); } 
+            else { startTimer(); }
+        }
+
+        function nextImage() {
+            stopTimer();
+            runSlideshow(); // Reuse the loop logic to go forward
+        }
+
+        function prevImage() {
+            stopTimer();
+            // Loop logic for going backward
+            for (let i = 0; i < images.length; i++) {
+                if (i === currentIndex) {
+                    let prevIdx = (i - 1 + images.length) % images.length;
+                    updateGallery(prevIdx);
+                    break;
+                }
+            }
+        }
+
+        // Event Listeners
+        document.getElementById("pause-btn").addEventListener("click", toggleSlideshow);
+        document.getElementById("next-btn").addEventListener("click", nextImage);
+        document.getElementById("prev-btn").addEventListener("click", prevImage);
+
+        // Initialize
+        window.addEventListener("load", startTimer);
+        // window.addEventListener("load", function() {
+        //     startTimer();
+        // }); // Note punctuation on this line
+    </script>
+</body>
+</html>
