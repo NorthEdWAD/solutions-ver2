@@ -62,9 +62,6 @@ To your `starter.html` page body:
      - Third button has `id` of `next-btn` and button text of **Next** 
 ---
 
-<!--
-
-
 ## Part 2: `starter.css`
 
 Style your page by adding these CSS rules to your style sheet:
@@ -283,7 +280,7 @@ window.addEventListener("load", startTimer);
 ---
 
 
--->
+
 
 
 
