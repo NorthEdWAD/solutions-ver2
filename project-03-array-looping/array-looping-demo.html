@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Looping Demo</title>
+    <style>
+
+        body { background-color: lightgoldenrodyellow; }
+
+        #intro {
+            width: 600px;
+            background-color: aqua;
+            color: #000;
+            font-size: 24px;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="intro">
+        <h1>Looping Through A JS Array</h1>
+        <h3>Traditional FOR Loop vs. forEach( ) Method</h3>
+        <p>See the console in your web browser for the output.</p>
+    </div>
+
+    <script>
+        // Define a constant array containing the names of three Marvel superheroes
+        const superheroes = ["Iron Man", "Captain America", "Thor"];
+       
+
+        // Use console.log and template strings to print names of two superheroes
+        //console.log(`Two superheroes: ${superheroes[0]} and ${superheroes[1]}\n\n`);
+
+        // PUSHING two more superheroes into array
+        // superheroes.push("Black Widow");
+        // superheroes.push("Hulk");
+
+        // superheroes.push("Black Widow", "Hulk");
+
+        // Square bracket notation (index number)
+        // superheroes[5] = "Silver Surfer";
+        // superheroes[6] = "Spider-Man";
+
+        // Traditional FOR loop to display all superheroes
+        console.log("Superheroes (using traditional FOR loop):");
+        for (let i = 0; i < superheroes.length; i++) {
+        console.log(superheroes[i]);
+        }
+
+        // Use forEach() method to display the names of all the superheroes 
+        // console.log("Superheroes (using forEach method):\n\n");
+        // superheroes.forEach(hero => console.log(hero));
+
+    </script>
+    
+</body>
+</html>
