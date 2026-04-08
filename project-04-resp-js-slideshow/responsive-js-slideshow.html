@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive JS Slideshow</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            margin: 20px; 
+            background-color: #f4f4f9; 
+        }
+
+        /* Define the grid container */
+        #gallery-container { 
+            display: grid;
+            margin: 20px auto; 
+            max-width: 600px; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+            gap: 15px;
+
+            /* Mobile default: 1-column layout */
+            grid-template-areas: 
+                "title"
+                "image"
+                "caption"
+                "btn-prev"
+                "btn-pause"
+                "btn-next";
+        }
+
+        /* Assign grid areas to HTML elements */
+        h1 { 
+            grid-area: title; 
+            margin: 0; 
+        }
+
+        #gallery-img { 
+            grid-area: image; 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 4px; 
+            border: 1px solid #ccc; 
+            justify-self: center;
+        }
+        #gallery-caption { 
+            grid-area: caption; 
+            margin: 0; 
+            font-size: 18px; 
+        }
+        
+        #prev-btn { grid-area: btn-prev; }
+        #pause-btn { grid-area: btn-pause; }
+        #next-btn { grid-area: btn-next; }
+
+        button { 
+            padding: 10px 20px; 
+            cursor: pointer; 
+            background-color: #007BFF; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+        }
+        button:hover { background-color: #0056b3; }
+
+        /* Desktop media query (600px and up) */
+        @media (min-width: 600px) {
+            #gallery-container {
+                /* Change layout: Buttons are displayed horizontally across three columns */
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                    "title title title"
+                    "image image image"
+                    "caption caption caption"
+                    "btn-prev btn-pause btn-next";
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="gallery-container">
+        <h1>Image Gallery</h1>
+        
+        <img id="gallery-img" src="coffee-shop.jpg" alt="Gallery Image">
+        
+        <p id="gallery-caption">Coffee Shop</p>
+        
+        <button id="prev-btn">Previous</button>
+        <button id="pause-btn">Pause</button>
+        <button id="next-btn">Next</button>
+    </div>
+
+    <script>
+        const images = ["coffee-shop.jpg", "jean-jacket.jpg", "fashion-girl.jpg"];
+        const captions = ["Coffee at Starbucks", "Jean Jacket Girl", "Fashionable"];
+        let currentIndex = 0;
+        let slideInterval;
+        let isPlaying = false;
+
+        function updateGallery(index) {
+            currentIndex = index;
+            document.getElementById("gallery-img").src = images[index];
+            document.getElementById("gallery-caption").textContent = captions[index];
+        }
+
+        function runSlideshow() {
+            let nextIdx = (currentIndex + 1) % images.length;
+            updateGallery(nextIdx);
+        }
+
+        function startTimer() {
+            isPlaying = true;
+            document.getElementById("pause-btn").textContent = "Pause";
+            slideInterval = setInterval(runSlideshow, 2000);
+        }
+
+        function stopTimer() {
+            isPlaying = false;
+            document.getElementById("pause-btn").textContent = "Play";
+            clearInterval(slideInterval);
+        }
+
+        function toggleSlideshow() {
+            if (isPlaying) { 
+                stopTimer(); 
+            } else { 
+                startTimer(); 
+            }
+        }
+
+        function nextImage() {
+            stopTimer();
+            runSlideshow();
+        }
+
+        function prevImage() {
+            stopTimer();
+            let prevIdx = (currentIndex - 1 + images.length) % images.length;
+            updateGallery(prevIdx);
+        }
+
+        document.getElementById("pause-btn").addEventListener("click", toggleSlideshow);
+        document.getElementById("next-btn").addEventListener("click", nextImage);
+        document.getElementById("prev-btn").addEventListener("click", prevImage);
+
+        window.addEventListener("load", startTimer);
+
+    </script>
+</body>
+</html>
