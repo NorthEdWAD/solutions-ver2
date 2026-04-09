@@ -1,28 +1,31 @@
-# [Unit Name] Lesson Plan (Days 1–2)
+# [JS Functions] Lesson Plan (Days 1–2)
 
 🎯 **Objective**
-Students will [action] using [tool/concept].
+Students will learn the parts of and then create and use traditional JS functions.
 
 🔑 **Key Concepts**
-- [Concept 1]
-- [Concept 2]
-- [Concept 3]
+- [function]
+- [parts of a traditional function]
+- [parameters vs. arguments]
+- [return statement]
+- [how to call a function]
+- [passing values between functions]
 
 ---
 
 ## 📅 **Day 1: Introduction & Guided Practice**  
 
-*Focus: Direct instruction on the essential elements of [Core Concept].*  
+*Focus: What is a function? What are the parts of a traditional function?*  
 
 🛠️ **Activity**
-[Clear task, e.g., "Follow along as we code a basic navigation bar together."]
+[Predict output of simple functions.]
 
 📝 **Assessment**
-[Quick check, e.g., "Show your neighbor your working nav bar by the end of class."]
+[Write function that converts Celsius temperature to Fahrenheit."]
 
 🔗 **Resources**
-- [Essential Link 1](url)
-- Starter file: `/examples/[filename]`
+- w3schools.com [JS Functions]([url](https://www.w3schools.com/js/js_function_intro.asp))
+- Starter file: `function-example.js`
 
 ---
 
