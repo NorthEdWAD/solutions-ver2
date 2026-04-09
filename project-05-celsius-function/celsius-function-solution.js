@@ -4,12 +4,20 @@
 
 // Write function to convert F to C 
 function convertTemperature(temperature) {
-  return (temperature - 32) / (9/5);
+
+  // Is the input a number?
+  if (isNaN(temperature)) {
+    return "Invalid input! Not a number!";
+  }
+
+  const celsius = (temperature - 32) * (5 / 9);
+
+  return Math.round(celsius * 100) / 100;
 };
 
 // Get Fahrenheit temperature from user
 
-let fahrenheitTemp = Number(prompt('Please enter your Fahrenheit temperature (Example: 32):\n'));
+let fahrenheitTemp = parseFloat(prompt('Please enter your Fahrenheit temperature (Example: 32):\n'));
 
 // Call the convertTemperature( ) function to do the math
 let celsiusTemp = convertTemperature(fahrenheitTemp);
