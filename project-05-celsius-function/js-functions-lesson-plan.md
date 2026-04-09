@@ -21,7 +21,7 @@ Students will learn the parts of and then create and use traditional JS function
 [Predict output of simple functions.]
 
 📝 **Assessment**
-[Write function that converts Celsius temperature to Fahrenheit."]
+- Write and call a function that converts Celsius temperature to Fahrenheit.
 
 🔗 **Resources**
 - w3schools.com [JS Functions]([url](https://www.w3schools.com/js/js_function_intro.asp))
@@ -31,27 +31,29 @@ Students will learn the parts of and then create and use traditional JS function
 
 ## 📅 **Day 2: Independent Work & Troubleshooting**  
 
-*Focus: Guided practice to apply the essential knowledge of [Core Concept].*  
+*Focus: Understanding difference between arguments and parameters; writing a function that uses arguments and parameters.*  
 
 🛠️ **Activity**
-[Task, e.g., "Customize your navigation bar using Flexbox. Add dropdowns if you finish early."]
+- Kinesthetic: Passing an argument to function parameter, then having function return a value (the answer)
 
 📝 **Assessment**
-[Deliverable, e.g., "Push your `nav.html` and `style.css` to GitHub by the end of class."]
+- Write two functions that have two parameters and both return a value
+  - Function 1 returns a number
+  - Function 2 returns a string (welcome message)
 
 🔗 **Resources**
-- [Essential Link 1](url)
-- Starter file: `/examples/[filename]`
+- w3schools: [Returning a value from function](https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_sayhello)
+- Starter file: `return-example.js`
 
 ---
 
 ## 📅 **Days 3–4: Flexible Planning (Based on Progress)**  
 
-*Focus: Open-ended exploration and reinforcement based on student progress from Days 1 and 2.*  
+*Focus: Using a value returned from one function in another function.*  
 
 🔗 **Resources**
-- [Essential Link 1](url)
-- Starter file: `/examples/[filename]`  
+- [Returning a value to HTML](https://www.w3schools.com/js/tryit.asp?filename=tryjs_farenheit_to_celsius_5)
+- Starter file: `updated-html-content.html`  
 
 
 **If students are struggling with [Concept X]:**
