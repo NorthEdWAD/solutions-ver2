@@ -30,9 +30,19 @@ Students will [action] using [tool/concept].
 📝 **Assessment**
 [Deliverable, e.g., "Push your `nav.html` and `style.css` to GitHub by the end of class."]
 
+🔗 **Resources**
+- [Essential Link 1](url)
+- Starter file: `/examples/[filename]`
+
 ---
 
 ## 📅 **Days 3–4: Flexible Planning (Based on Progress)**
+
+🔗 **Resources**
+- [Essential Link 1](url)
+- Starter file: `/examples/[filename]`  
+
+
 **If students are struggling with [Concept X]:**
 - [ ] Mini-lesson on [Concept X] (10–15 mins).
 - [ ] Pair programming: Debug together.
