@@ -10,7 +10,10 @@ Students will [action] using [tool/concept].
 
 ---
 
-## 📅 **Day 1: Introduction & Guided Practice**
+## 📅 **Day 1: Introduction & Guided Practice**  
+
+*Focus: Direct instruction on the essential elements of [Core Concept].*  
+
 🛠️ **Activity**
 [Clear task, e.g., "Follow along as we code a basic navigation bar together."]
 
@@ -23,7 +26,10 @@ Students will [action] using [tool/concept].
 
 ---
 
-## 📅 **Day 2: Independent Work & Troubleshooting**
+## 📅 **Day 2: Independent Work & Troubleshooting**  
+
+*Focus: Guided practice to apply the essential knowledge of [Core Concept].*  
+
 🛠️ **Activity**
 [Task, e.g., "Customize your navigation bar using Flexbox. Add dropdowns if you finish early."]
 
@@ -36,7 +42,9 @@ Students will [action] using [tool/concept].
 
 ---
 
-## 📅 **Days 3–4: Flexible Planning (Based on Progress)**
+## 📅 **Days 3–4: Flexible Planning (Based on Progress)**  
+
+*Focus: Open-ended exploration and reinforcement based on student progress from Days 1 and 2.*  
 
 🔗 **Resources**
 - [Essential Link 1](url)
