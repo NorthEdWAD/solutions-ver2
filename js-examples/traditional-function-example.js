@@ -15,7 +15,7 @@ console.log(`The sum of ${num1} and ${num2} is ${finalAnswer}.`);
 
 // Function to welcome user by first name
 function welcomeUser(firstName) {
-    // Return a welcome message with the user's first name
+    // Welcome user by first name
     return `Welcome, ${firstName}!`;
 }
 
