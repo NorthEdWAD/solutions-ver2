@@ -62,13 +62,13 @@ Students will learn the parts of and then create and use traditional JS function
 - [ ] Exit ticket: "What’s one question you still have about using arguments and parameters in JS functions?"
 
 **If students are on track:**
-- [ ] Introduce [Next Concept, e.g., "Responsive design with media queries"].
-- [ ] Activity: [Task, e.g., "Add a mobile menu to your navigation bar."].
-- [ ] Assessment: [Deliverable, e.g., "Submit your updated code by Friday."]
+- [ ] Introduce concept of using value returned from one function in another function.
+- [ ] Code Along: How to use value returned from one function in another function.
+- [ ] Assessment: Write script containing TWO functions; use value returned from Function 1 in Function 2 to produce new output.
 
 **If students are ahead:**
-- [ ] Challenge: [Extension, e.g., "Build a multi-level dropdown menu."].
-- [ ] Peer review: Trade projects and give feedback.
+- [ ] Read overview of difference between traditional and arrow function.
+- [ ] Challenge: Convert traditional function to arrow function.
 
 ---
 ### Notes for Next Time
