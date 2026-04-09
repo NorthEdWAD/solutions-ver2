@@ -9,12 +9,12 @@ function convertTemperature(temperature) {
 
 // Get Fahrenheit temperature from user
 
-fahrenheitTemp = Number(prompt('Please enter your Fahrenheit temperature (Example: 32):\n'));
+let fahrenheitTemp = Number(prompt('Please enter your Fahrenheit temperature (Example: 32):\n'));
 
 // Call the convertTemperature( ) function to do the math
-celsiusTemp = convertTemperature(fahrenheitTemp);
+let celsiusTemp = convertTemperature(fahrenheitTemp);
 
 // Display output in alert box
-outputString = `${fahrenheitTemp} degrees Fahrenheit is equivalent to ${celsiusTemp} degrees Celsius.`;
+const outputString = `${fahrenheitTemp} degrees Fahrenheit is equivalent to ${celsiusTemp} degrees Celsius.`;
 alert(outputString);
 
