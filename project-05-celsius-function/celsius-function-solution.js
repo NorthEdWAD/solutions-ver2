@@ -6,9 +6,12 @@
 function convertTemperature(temperature) {
 
   // Is the input a number?
-  if (isNaN(temperature)) {
-    return "Invalid input! Not a number!";
-  }
+if (isNaN(celsiusTemp)) {
+    alert(celsiusTemp); // Displays the "Invalid input" message
+} else {
+    const outputString = `${fahrenheitTemp.toFixed(2)}°F is ${celsiusTemp.toFixed(2)}°C.`;
+    alert(outputString);
+}
 
   const celsius = (temperature - 32) * (5 / 9);
 
