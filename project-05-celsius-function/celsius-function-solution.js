@@ -9,7 +9,7 @@ function convertTemperature(temperature) {
 
 // Get Fahrenheit temperature from user
 
-fahrenheitTemp = Number(input('Please enter your Fahrenheit temperature (Example: 32):\n'));
+fahrenheitTemp = Number(prompt('Please enter your Fahrenheit temperature (Example: 32):\n'));
 
 // Call the convertTemperature( ) function to do the math
 celsiusTemp = convertTemperature(fahrenheitTemp);
