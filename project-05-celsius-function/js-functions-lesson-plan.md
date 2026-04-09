@@ -56,10 +56,10 @@ Students will learn the parts of and then create and use traditional JS function
 - Starter file: `updated-html-content.html`  
 
 
-**If students are struggling with [Concept X]:**
-- [ ] Mini-lesson on [Concept X] (10–15 mins).
-- [ ] Pair programming: Debug together.
-- [ ] Exit ticket: "What’s one question you still have?"
+**If students are struggling with the difference between arguments and parameters:**
+- [ ] Mini-lesson on arguments vs. parameters using wood chipper analogy and video (10–15 mins).
+- [ ] Pair programming: Predict output of three functions with partner.
+- [ ] Exit ticket: "What’s one question you still have about using arguments and parameters in JS functions?"
 
 **If students are on track:**
 - [ ] Introduce [Next Concept, e.g., "Responsive design with media queries"].
