@@ -25,12 +25,12 @@ console.log(greeting);
 
 
 // Function to calculate and return area of a rectangle
-function calculateRectangleArea(length, width) {
+function calcRectangleArea(length, width) {
     // Return the product of the length and width to get the area
     return length * width;
 }
 
 let rectLength = 4;
 let rectWidth = 6;
-let rectArea = calculateRectangleArea(rectLength, rectWidth);
+let rectArea = calcRectangleArea(rectLength, rectWidth);
 console.log(`Area of your rectangle (sq. ft.) is: ${rectArea}`);
