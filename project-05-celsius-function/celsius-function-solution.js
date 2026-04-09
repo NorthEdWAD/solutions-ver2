@@ -1,6 +1,6 @@
 // Abraham Lincoln
 // 10 JAN 20XX
-// Celsius Function
+// Celsius Conversion Function
 
 // Write function to convert F to C 
 function convertTemperature(temperature) {
@@ -15,6 +15,8 @@ let fahrenheitTemp = Number(prompt('Please enter your Fahrenheit temperature (Ex
 let celsiusTemp = convertTemperature(fahrenheitTemp);
 
 // Display output in alert box
-const outputString = `${fahrenheitTemp} degrees Fahrenheit is equivalent to ${celsiusTemp} degrees Celsius.`;
+const outputString = `${fahrenheitTemp.toFixed(2)} degrees Fahrenheit is equivalent to ${celsiusTemp.toFixed(2)} degrees Celsius.`;
 alert(outputString);
+
+
 
