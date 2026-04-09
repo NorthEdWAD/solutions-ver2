@@ -12,4 +12,5 @@ const lastName = "Jenkins";
 const age = 21;
 
 // Use keyword let to create a variable whose value CAN be overwritten
+// Player's score can be updated (overwritten) as the player plays the game
 let playerScore = 0;
