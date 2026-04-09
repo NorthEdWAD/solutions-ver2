@@ -24,6 +24,7 @@ let celsiusTemp = convertTemperature(fahrenheitTemp);
 
 // Display output in alert box
 const outputString = `${fahrenheitTemp.toFixed(2)} degrees Fahrenheit is equivalent to ${celsiusTemp.toFixed(2)} degrees Celsius.`;
+
 alert(outputString);
 
 
