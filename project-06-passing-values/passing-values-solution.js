@@ -6,6 +6,9 @@
 // the area of a rectangle
 
 function runProject() {
+
+    // Get width and length and area as inputs
+    // for the displayOutput() function
     const width = getWidth();
     const length = getLength(); 
     const area = calculateArea(width, length);
