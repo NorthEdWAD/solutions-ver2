@@ -6,10 +6,10 @@
 function convertTemperature(temperature) {
 
   // Is the input a number?
-if (isNaN(celsiusTemp)) {
-    alert(celsiusTemp); // Displays the "Invalid input" message
+if (isNaN(temperature)) {
+    alert(temperature); // Displays the "Invalid input" message
 } else {
-    const outputString = `${fahrenheitTemp.toFixed(2)}°F is ${celsiusTemp.toFixed(2)}°C.`;
+    const outputString = `${temperature.toFixed(2)}°F is ${celsiusTemp.toFixed(2)}°C.`;
     alert(outputString);
 }
 
