@@ -4,7 +4,7 @@ The DOM Toggle (Styling with JS)
 The **DOM** (Document Object Model) is how JavaScript "talks" to your HTML. Every element on your page can be changed by JS—including its colors, sizes, and visibility.
 
 ### 2. Selecting Elements
-Before you can change something, you have to find it. We use the element's **ID** to do this:
+Before you use can JavaScript to change something, you have to tell JavaScript where find it in your web page. We use the element's **ID** to do this:
 ```javascript
 const box = document.getElementById("my-box");
 ```
