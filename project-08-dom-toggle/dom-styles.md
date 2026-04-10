@@ -10,7 +10,8 @@ const box = document.getElementById("my-box");
 ```
 
 ### 3. Changing Styles
-Once you have the element, you can access its CSS properties using `.style`. 
+Once you have the element, you can access its CSS properties using `.style`.  
+
 **Note:** In JS, CSS properties like `background-color` become `backgroundColor` (Camel Case).
 
 ```javascript
