@@ -26,6 +26,7 @@ Students will learn the parts of and then create and use traditional JS function
 - Write a simple script that calculates the area of a rectangle OR calculates the average of three quiz scores
 
 🔗 **Resources**
+- YouTube: [Wood chipper video => IPO Model](https://youtu.be/6Q5NIm3VeUM?si=3p0G63xZM9n31idz)
 - w3schools.com [JS Functions]([url](https://www.w3schools.com/js/js_function_intro.asp))
 - Starter file: `function-example.js`
 
