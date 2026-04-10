@@ -21,7 +21,9 @@ Students will learn the parts of and then create and use traditional JS function
 [Predict output of simple functions.]
 
 📝 **Assessment**
-- Write and call a function that converts Celsius temperature to Fahrenheit.
+- Mini-quiz: ID parts of a JS function
+- Be able to explain the IPO Model and how it relates to performing a simple calculation in JS
+- Write a simple script that calculates the area of a rectangle OR calculates the average of three quiz scores
 
 🔗 **Resources**
 - w3schools.com [JS Functions]([url](https://www.w3schools.com/js/js_function_intro.asp))
@@ -37,9 +39,10 @@ Students will learn the parts of and then create and use traditional JS function
 - Kinesthetic: Passing an argument to function parameter, then having function return a value (the answer)
 
 📝 **Assessment**
-- Write two functions that have two parameters and both return a value
-  - Function 1 returns a number
-  - Function 2 returns a string (welcome message)
+- Write two functions that take parameters and both return a value
+  - Function 1 uses the alert ( ) method to display student's first name and home school in a template string
+  - Function 2 has two parameters -- num1 and num2 -- and calculates and returns the product of the two numbers
+    - Answer is displayed in an alert box using a template string
 
 🔗 **Resources**
 - w3schools: [Returning a value from function](https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_sayhello)
