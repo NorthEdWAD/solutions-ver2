@@ -1,12 +1,31 @@
-// First and last name
-// Current date
-// JS Traffic Light Project (DOM)
+/* Abe Lincoln
+April 10, 2026
+Traffic Light Script
+*/
 
 // Objective
 // Create a traffic light simulator using JS
 
-// TODO 1: Declare using let a variable named lightColor
+// 1. Create a variable for the current light color ("red", "yellow", or "green")
+let lightColor = "green";
 
-// TODO 2: Use an if-else statement to help JavaScript update the color of a DIV on your screen
-// If the lightColor variable is set to green,  change the corresponding <div> on the screen to green
-// Otherwise, if lightColor is set to red, change the corresponding <div> on the screen to red
+// 2. Select the HTML elements
+const redCircle = document.getElementById("red-light");
+const yellowCircle = document.getElementById("yellow-light");
+const greenCircle = document.getElementById("green-light");
+
+// 3. Logic to "turn on" the light
+if (lightColor === "red") {
+    redCircle.style.backgroundColor = "red";
+} else if (lightColor === "yellow") {
+    yellowCircle.style.backgroundColor = "yellow";
+} else if (lightColor === "green") {
+    greenCircle.style.backgroundColor = "lime";
+} else {
+    console.log("Invalid light color!");
+}
+
+/* INDEPENDENT TASK:
+Change the lightColor variable at the top to "red" and refresh the page.
+Does the red light turn on?
+*/
