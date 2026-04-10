@@ -1,4 +1,4 @@
-# Day 2: The DOM Toggle (Styling with JS)
+The DOM Toggle (Styling with JS)
 
 ### 1. What is the DOM?
 The **DOM** (Document Object Model) is how JavaScript "talks" to your HTML. Every element on your page can be changed by JS—including its colors, sizes, and visibility.
