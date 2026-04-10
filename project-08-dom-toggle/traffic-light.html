@@ -1,1 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Lab</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; }
+        .housing { background-color: #333; padding: 20px; border-radius: 20px; width: 100px; }
+        .light { 
+            width: 80px; height: 80px; background-color: #111; 
+            border-radius: 50%; margin: 10px auto; 
+        }
+    </style>
+</head>
+<body>
 
+    <h1>Traffic Light Simulator</h1>
+    
+    <div class="housing">
+        <div id="red-light" class="light"></div>
+        <div id="yellow-light" class="light"></div>
+        <div id="green-light" class="light"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
