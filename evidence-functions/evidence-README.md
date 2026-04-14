@@ -24,10 +24,10 @@
 Your evidence project is complete when you have completed these tasks:
 
 * [ ] Updated the comment block in your script (`starter.js`)
-* [ ] Created a function that prompts the user for -- and then returns as a FLOAT -- the length of the base of a right triangle.
-* [ ] Created a function that prompts the user for -- and then returns as a FLOAT -- the **height** of the right triangle.
-* [ ] Created a function that:
-      - takes the base and height of the right triangle as parameters
+* [ ] Created the first function that prompts the user for -- and then returns using `parseFloat()` -- the length of the base of a right triangle.
+* [ ] Created the second function that prompts the user for -- and then returns using `parseFloat()` -- the **height** of the right triangle.
+* [ ] Created a third function that:
+      - uses the base and height of the right triangle as parameters
       - calculates the area (in sq. ft.) of the right triangle
       - uses a template string to display the base, height and area of the right triangle
 
