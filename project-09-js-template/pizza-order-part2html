@@ -21,7 +21,7 @@
     <!-- Confirm Order -->
     <h3>Your Order:</h3>
 
-    <p>---</p>
+    <p id="output">---</p>
     
     <script src="pizza-order-part2.js"></script>
 
