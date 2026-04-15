@@ -37,7 +37,7 @@ const averageScore = calcAverage(quiz1Score, quiz2Score);
 // 3. Build output string 
 const message = `Greetings, ${userName}! 
 Your score for Quiz 1 was ${quiz1Score} and Quiz 2 was ${quiz2Score}. 
-Your calculated average is: ${averageScore}.`;
+Your AVERAGE quiz score: ${averageScore}.`;
 
 // 4. Display the result
 alert(message);
