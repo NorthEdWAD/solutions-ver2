@@ -2,21 +2,20 @@
 // Current date
 // JS Addition Calculator
 
-// Add event listener to run placeOrder function
-document.getElementById("btn").addEventListener("click", placeOrder);
+// Add event listener to button element
+document.getElementById("btn").addEventListener("click", btnClicked);
 
 // Create function to place pizza order
-function placeOrder(){
+function btnClicked(){
     // INPUT
-    const size = prompt("Enter size of pizza (small/medium/large):\n");
-    const topping1 = prompt("Enter first topping (Example: mushrooms)\n");
-    const topping2 = prompt("Enter second topping (Example: pepperoni)\n");
+    const num1 = document.getElementById("num1-in").value;
+    const num2 = document.getElementById("num2-in").value;
 
     // PROCESS
-    const msg = `Your ${size} pizza with ${topping1} and ${topping2} will be ready soon!`;
+    const total = num1 + num2;
 
     // OUTPUT
-    alert(msg);
+    document.getElementById("output").innerHTML = total;
 }
 
 
