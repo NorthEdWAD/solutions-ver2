@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS10 Grade Calculator</title>
+    <style>
+        /* Based on addition-calculator.css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            font-size: 16px;
+            --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* Using white background to match the screenshot */
+            --pg-background-color: #ffffff; 
+        }
+
+        body {
+            width: 600px;
+            margin: 25px auto;
+            font-family: var(--font-family);
+            background-color: var(--pg-background-color);
+        }
+
+        h1 { font-size: 2rem; margin-bottom: 10px; }
+        
+        hr { margin: 20px 0; border: 0; border-top: 1px solid #ccc; }
+
+        p { margin: 15px 0; line-height: 1.4; }
+
+        input {
+            width: 50px;
+            padding: 2px;
+        }
+
+        /* Styling for the specific yellow button in screenshot */
+        #btn {
+            background-color: #ffff00;
+            border: 2px solid #000;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        #btn:hover {
+            background-color: #e6e600;
+        }
+
+        h2 { font-size: 1.5rem; margin-top: 30px; }
+        
+        .output-text {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CS10 Grade Calculator</h1>
+    <hr>
+    
+    <p>Computing Science is a part of Career and Technology Studies (CTS).</p>
+    <p>Your grade for Computing Science 10 will be the <strong>average</strong> of your grades on five individual CTS modules.</p>
+
+    <hr>
+
+    <h2>Enter Grades</h2>
+    
+    <p>Client-Side Scripting 1: <input type="number" id="grade1"> %</p>
+    <p>Structured Programming 1: <input type="number" id="grade2"> %</p>
+    <p>Structured Programming 2: <input type="number" id="grade3"> %</p>
+    <p>Client-Side Scripting 2: <input type="number" id="grade4"> %</p>
+    <p>Project A: <input type="number" id="grade5"> %</p>
+
+    <p><button id="btn">Calculate CS10 Grade</button></p>
+
+    <hr>
+    
+    <p class="output-text">Final CS10 Grade: <span id="output">-----</span>%</p>
+
+    <script>
+        // Based on addition-calculator.js logic
+
+        // Add event listener to button element
+        document.getElementById("btn").addEventListener("click", btnClicked);
+
+        // Function to calculate the average
+        function btnClicked() {
+            // INPUT - Get values from all 5 inputs
+            let g1 = document.getElementById("grade1").value;
+            let g2 = document.getElementById("grade2").value;
+            let g3 = document.getElementById("grade3").value;
+            let g4 = document.getElementById("grade4").value;
+            let g5 = document.getElementById("grade5").value;
+
+            // Convert text inputs into numbers
+            g1 = parseFloat(g1);
+            g2 = parseFloat(g2);
+            g3 = parseFloat(g3);
+            g4 = parseFloat(g4);
+            g5 = parseFloat(g5);
+
+            // PROCESS - Calculate the average
+            const average = (g1 + g2 + g3 + g4 + g5) / 5;
+
+            // OUTPUT - Round to nearest whole number or keep decimals
+            // Using .toFixed(0) to keep it clean like a standard grade
+            document.getElementById("output").innerHTML = average.toFixed(0);
+        }
+    </script>
+
+</body>
+</html>
