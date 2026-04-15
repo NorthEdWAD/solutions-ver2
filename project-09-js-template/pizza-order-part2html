@@ -9,10 +9,19 @@
 <body>
 
     <h1>JS Pizza Order / Part 2</h1>
-    <p>Place your order for a fabulous pizza!</p>
+
+    <!-- Order Form -->
+    <h3>Place your order for a fabulous pizza!</h3>
+    <p>Size: <input type="text"></p>
+    <p>Topping 1: <input type="text"></p>
+    <p>Topping 2: <input type="text"></p>
 
     <p><button id="btn">Place Order</button></p>
 
+    <!-- Confirm Order -->
+    <h3>Your Order:</h3>
+
+    <p>---</p>
     
     <script src="pizza-order-part2.js"></script>
 
