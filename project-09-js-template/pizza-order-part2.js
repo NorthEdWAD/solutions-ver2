@@ -8,15 +8,15 @@ document.getElementById("btn").addEventListener("click", placeOrder);
 // Create function to place pizza order
 function placeOrder(){
     // INPUT
-    const size = prompt("Enter size of pizza (small/medium/large):\n");
-    const topping1 = prompt("Enter first topping (Example: mushrooms)\n");
-    const topping2 = prompt("Enter second topping (Example: pepperoni)\n");
+    const size = document.getElementById("size-in").value;
+    const topping1 = document.getElementById("topping1-in").value;
+    const topping2 = document.getElementById("topping2-in").value;
 
     // PROCESS
     const msg = `Your ${size} pizza with ${topping1} and ${topping2} will be ready soon!`;
 
     // OUTPUT
-    alert(msg);
+    document.getElementById("output").innerHTML = msg;
 }
 
 

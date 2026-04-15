@@ -12,9 +12,9 @@
 
     <!-- Order Form -->
     <h3>Place your order for a fabulous pizza!</h3>
-    <p>Size: <input type="text"></p>
-    <p>Topping 1: <input type="text"></p>
-    <p>Topping 2: <input type="text"></p>
+    <p>Size: <input type="text" id="size-in"></p>
+    <p>Topping 1: <input type="text" id="topping1-in"></p>
+    <p>Topping 2: <input type="text" id="topping2-in"></p>
 
     <p><button id="btn">Place Order</button></p>
 
