@@ -4,7 +4,6 @@
 
 // Example 1
 function sayHello(userName) {
-  let message = "Hello, " + username + "!";
   const message = `Hello, ${username}!`;
   alert(messge);
 }
