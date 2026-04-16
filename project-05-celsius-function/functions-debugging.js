@@ -8,6 +8,9 @@ function sayHello(userName) {
   alert(messge);
 }
 
+const user = "technoBob227";
+sayHello(user);
+
 
 // Example 2
 // 2 errors
