@@ -34,12 +34,12 @@ const squareArrow = (number) => {
 
 // Function 3: Takes two parameters
 // Traditional function
-function addNumbers(a, b) {
-  return a + b;
+function addNumbers(num1, num2) {
+  return num1 + num2;
 }
 // Arrow function equivalent
-const addNumbersArrow = (a, b) => {
-  return a + b;
+const addNumbersArrow = (num1, num2) => {
+  return num1 + num2;
 };
 ```
 
