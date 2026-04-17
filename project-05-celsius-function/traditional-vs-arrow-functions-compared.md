@@ -22,7 +22,7 @@ const greetArrow = () => {
   return "Hello, world!";
 };
 
-// Function 2: Takes one parameter
+// Function 2: Takes one parameter named `number`
 // Traditional function
 function square(number) {
   return number * number;
@@ -32,7 +32,7 @@ const squareArrow = (number) => {
   return number * number;
 };
 
-// Function 3: Takes two parameters
+// Function 3: Takes two parameters (num1 and num2)
 // Traditional function
 function addNumbers(num1, num2) {
   return num1 + num2;
