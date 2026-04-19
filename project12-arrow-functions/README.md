@@ -33,7 +33,7 @@ Your project is complete when you have:
 ---
 
 ## 🔗 **Resources**
-- [Link](url)
+- [Traditional Versus Arrow Functions examples](https://github.com/NorthEdWAD/web-hub/blob/main/project-05-functions/examples/traditional-versus-arrow-functions-example.md)
 - See starter files
 - [General web design resources](https://github.com/NorthEdWAD/web-hub/wiki)
 
